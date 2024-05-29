@@ -122,23 +122,30 @@ small span {
   font-weight: 600;
   cursor: pointer;
 }
-/* .error{color: var(--red);
+.error{color: var(--red);
   font-weight: 600;
   cursor: pointer;
-} */
+}
 
-.password {
-  width: 400px;
-  position: relative;
+
+#firstname-error,
+#lastname-error,
+#email-error,
+#password-error{
+  text-align: left;
+  font-size: small;
+
 }
-.password input[type="password"],.password input[type="text"]{
-  width:100%;
-  padding: 12px 36px 12px 12px;
- 
-}
-.material-symbols-outlined{
-  position: absolute;
-  top: 63%;
-  right: 15%;
-  cursor: pointer;
+
+@media (max-width:600px) {
+  .container{width: 100vw;
+    height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .container-text,.container-form{
+    width:100%;
+    padding: 0.5em;
+  }
+  
 }

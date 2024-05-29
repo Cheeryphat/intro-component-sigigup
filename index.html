@@ -33,21 +33,21 @@
         <form action="" id="form">
           <label for="firstName">
             <input type="text" class="firstName" placeholder="First Name" />
-          </label>
+          
+            <span class="error" id="firstname-error">First name cannot be empty</span></label>
           
           <label for="lastName">
             <input type="text" class="lastName" placeholder="Last Name" />
+            <span class="error" id="lastname-error">Last name cannot be empty</span>
           </label>
           <label for="email">
             <input type="email" class="email" placeholder="Email" />
+            <span class="error" id="email-error">Looks like this is not an Email</span>
           </label>
           <label for="password">
             <input type="password" class="password" placeholder="Password" />
-            <span class="material-symbols-outlined eye"> visibility </span>
-             
-              <span class="material-symbols-outlined eyeOff">
-                visibility_off
-                </span>
+            
+            <span class="error" id="password-error">Password cannot be empty</span>
           </label>
           <button id="button">Claim your free trial</button>
           <small

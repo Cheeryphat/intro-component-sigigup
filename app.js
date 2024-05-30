@@ -8,8 +8,9 @@ const firstnameError = document.querySelector('#firstname-error')
 const lastnameError = document.querySelector('#lastname-error')
 const passwordError = document.querySelector('#password-error')
 const emailError = document.querySelector('#email-error')
-
-const togglePassword = document.querySelector(".material-symbols-outlined")
+const eye = document.querySelector('eye');
+const eyeOff =document.querySelector('eye-off')
+const togglePassword = document.querySelector(".toggle-password")
 // const error_display = document.querySelector('.error')
 console.log(firstName);
 
@@ -74,13 +75,13 @@ function validateEmail(email) {
   
 }
 togglePassword.addEventListener("click", ()=>{
-  if (password.type === password){
+  if (password.type === "password"){
     password.type = "text";
-    // togglePassword.classList.remove("eye");
-    // togglePassword.classList.add("eyeOff");
+    // eyeOff.style.display ='block'
+    eye.style.display ='none'
   }else{
     password.type = "password";
-    // togglePassword.classList.add("eye");
-    // togglePassword.classList.remove("eyeOff");
+  //  eye.style.display ='block'
+   eyeOff.style.display ='none'
   }
 })
